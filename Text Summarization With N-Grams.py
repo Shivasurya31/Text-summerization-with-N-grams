@@ -8,12 +8,12 @@ nltk.download('punkt')
 def summarize_text(text, n=2, num_sentences=1):
     """
     Summarize the input text using n-grams.
-    
+
     Args:
     text (str): The text to summarize.
     n (int): The size of the n-grams. Default is 2 (bigrams).
     num_sentences (int): Number of sentences to include in the summary. Default is 1.
-    
+
     Returns:
     str: The summary of the text.
     """
@@ -56,5 +56,5 @@ def main():
     print("\nSummary:")
     print(summary)
 
-if name == "main":
+if __name__ == "__main__":
     main()
